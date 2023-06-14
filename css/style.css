@@ -78,6 +78,10 @@ img, .bell-container{
     color: #B9BFC6;
 }
 
+.contacts{
+    height: 800px;
+    width: 100%;
+}
 
 @media screen and (max-width: 991px) {
 
