@@ -43,7 +43,7 @@
                     </div>
                     <!-- search bar  -->
                     <div class="search-bar p-2">
-                        <i class="fa-solid fa-magnifying-glass"></i> 
+                        <i class="fa-solid fa-magnifying-glass icon-colr"></i> 
                         <input class="form-control search" list="datalistOptions" id="exampleDataList" placeholder="Cerca o inizia una nuova chat">
                         <datalist id="datalistOptions">
                             <option value="San Francisco">
@@ -174,20 +174,34 @@
                             <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-ellipsis-v"></i> </div>
                         </div>
                     </div>
-                    <!-- text area -->
+                    <!-- messages zone -->
                     <div class="msg-zone overflow-auto">
-
+                        <div class="container">
+                            <div class="row m-4">
+                                <div class="col d-flex flex-column">
+                                    <div class="sent-msg p-2 m-2 w-50 align-self-end rounded position-relative">
+                                        <p class="m-0">Hai portatto a spasso il cane? </p>
+                                        <p class="last-txt font-size-span position-absolute bottom-0 end-0 m-1">12.00</p>
+                                    </div>
+                                    
+                                    <div class="recived-msg align-self-start bckg-white w-50 p-2 rounded position-relative">
+                                        <p class="m-0">Hai portatto a spasso il cane? </p>
+                                        <p class="last-txt font-size-span position-absolute bottom-0 end-0 m-1">12.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- message area text inputs -->
-                    <div class="text-area d-flex  p-3 align-items-center justify-content-center">
-                        <div class="mx-4 icon-colr">
+                    <div class="text-area d-flex py-3 align-items-center justify-content-evenly">
+                        <div class="mx-4 dark-icon-colr">
                             <i class="far fa-xl fa-smile"></i>
                         </div>
                         
                         <div class="input-group">
                             <input type="text" placeholder="Scrivi un messaggio" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div>
-                        <div class="mx-4 icon-colr">
+                        <div class="mx-4 dark-icon-colr">
                             <i class="fas fa-xl fa-microphone"></i>
                         </div>
                     </div>

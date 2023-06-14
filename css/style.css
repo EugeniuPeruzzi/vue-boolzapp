@@ -74,6 +74,10 @@ img, .bell-container{
     color: #B1B1B1;
 }
 
+.dark-icon-color{
+    color: #6A7275;
+}
+
 .last-txt{
     color: #B9BFC6;
 }
@@ -87,6 +91,13 @@ img, .bell-container{
     height: 875px;
     width: 100%;
     background-image: url(../img/mine.jpg);
+}
+
+.sent-msg{
+    background-color: #D5F9BA;
+}
+.font-size-span{
+    font-size: 0.8rem;
 }
 
 .text-area{
