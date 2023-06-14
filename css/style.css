@@ -7,7 +7,38 @@
 body{
     height: 100vh;
     background: linear-gradient(180deg, #009688 15%, #D9DBD4 15%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+
+.vh-80{
+    height: 90vh;
+}
+
+img, .bell-container{
+    height: 50px;
+    width: 50px;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.pur{
+    background-color: purple;
+}
+
+.cyan{
+    background-color: cyan;
+}
+
+.bckg-white{
+    background-color: #fff;
+}
+
+.icon-size{
+    width: 35%;
 }

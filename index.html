@@ -13,15 +13,50 @@
 
     <main>
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="content-l"></div>
-                    <div class="content-r"></div>
+            <div class="row vh-80 mt-5">
+                <div class="col-5 bckg-white">
+                    <!-- user profile -->
+                    <div class="user d-flex align-items-center justify-content-between m-3">
+                        <div class="user-profile d-flex align-items-center">
+                            <div class="img-container">
+                                <img class="rounded-circle" src="./img/avatar_io.jpg" alt="avatar">
+                            </div>
+                            <h5>Sofia</h5>
+                        </div>
+                        <div class="menu d-flex ">
+                            <div class="mx-2" href="nav-user"> <i class="fas fa-circle-notch"></i> </div>
+                            <div class="mx-2" href="nav-user"> <i class="fas fa-comment-alt"></i> </div>
+                            <div class="mx-2" href="nav-user"> <i class="fas fa-ellipsis-v"></i> </div>
+                        </div>
+                    </div>
+                    <!-- notification panel -->
+                    <div class="notification">
+                        <div class="user-profile align-items-center d-flex">
+                            <div class="bckg-white bell-container rounded-circle icon-size">
+                                <i class="fa-solid fa-bell-slash icon-size"></i>
+                            </div>
+                            <div class="text-notification">
+                                <h5>Ricevi notifiche di nuovi messaggi</h5>
+                                <a href="#">Attiva notifiche desktop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 blue">
+                    <div class="user d-flex justify-content-between">
+                        <div class="img-container d-flex">
+                            <img class="rounded-circle" src="./img/avatar_io.jpg" alt="avatar">
+                        </div>
+                        <h5>Sofia</h5>
+                        <div class="menu d-flex">
+                            <div href="nav-user"> <i class="fas fa-circle-notch"></i> </div>
+                            <div href="nav-user"> <i class="fas fa-comment-alt"></i> </div>
+                            <div href="nav-user"> <i class="fas fa-ellipsis-v"></i> </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-
     </main>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
