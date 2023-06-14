@@ -57,103 +57,19 @@
                         <!-- contact list -->
                         <div class="contacts overflow-auto">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item list-group-item-secondary">
-                                    <div class="p-2 align-items-center d-flex position-relative">
+                                <li class="list-group-item list-group-item-secondary" v-for="(list, index) in contacts">
+                                    <div class="p-2 align-items-center d-flex position-relative" >
                                         <div class="img-container">
-                                            <img class="rounded-circle" src="./img/avatar_1.jpg" alt="avatar">
+                                            <img class="rounded-circle" :src="list.avatar" alt="avatar">
                                         </div>
                                         <div class="text-notification ms-3 position-relative">
-                                            <h5 class="m-0">Michele</h5>
-                                            <span class="last-txt">Ultimo messaggio inviato</span>
+                                            <h5 class="m-0">{{list.name}}</h5>
+                                            <span class="last-txt" v-for="(msg, index) in list.messages">{{ msg.message}}</span>
                                         </div>
                                         <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
                                     </div>
                                 </li>
-                                <li class="list-group-item">
-                                    <div class="p-3 align-items-center d-flex position-relative">
-                                        <div class="img-container">
-                                            <img class="rounded-circle" src="./img/avatar_2.jpg" alt="avatar">
-                                        </div>
-                                        <div class="text-notification ms-3 position-relative">
-                                            <h5 class="m-0">Fabio</h5>
-                                            <span class="last-txt">Ultimo messaggio inviato</span>
-                                        </div>
-                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="p-3 align-items-center d-flex position-relative">
-                                        <div class="img-container">
-                                            <img class="rounded-circle" src="./img/avatar_3.jpg" alt="avatar">
-                                        </div>
-                                        <div class="text-notification ms-3 position-relative">
-                                            <h5 class="m-0">Samuele</h5>
-                                            <span class="last-txt">Ultimo messaggio inviato</span>
-                                        </div>
-                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="p-3 align-items-center d-flex position-relative">
-                                        <div class="img-container">
-                                            <img class="rounded-circle" src="./img/avatar_4.jpg" alt="avatar">
-                                        </div>
-                                        <div class="text-notification ms-3 position-relative">
-                                            <h5 class="m-0">Alessandro B.</h5>
-                                            <span class="last-txt">Ultimo messaggio inviato</span>
-                                        </div>
-                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="p-3 align-items-center d-flex position-relative">
-                                        <div class="img-container">
-                                            <img class="rounded-circle" src="./img/avatar_5.jpg" alt="avatar">
-                                        </div>
-                                        <div class="text-notification ms-3 position-relative">
-                                            <h5 class="m-0">Alessandro L.</h5>
-                                            <span class="last-txt">Ultimo messaggio inviato</span>
-                                        </div>
-                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="p-3 align-items-center d-flex position-relative">
-                                        <div class="img-container">
-                                            <img class="rounded-circle" src="./img/avatar_6.jpg" alt="avatar">
-                                        </div>
-                                        <div class="text-notification ms-3 position-relative">
-                                            <h5 class="m-0">Claudia</h5>
-                                            <span class="last-txt">Ultimo messaggio inviato</span>
-                                        </div>
-                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="p-3 align-items-center d-flex position-relative">
-                                        <div class="img-container">
-                                            <img class="rounded-circle" src="./img/avatar_7.jpg" alt="avatar">
-                                        </div>
-                                        <div class="text-notification ms-3 position-relative">
-                                            <h5 class="m-0">Federico</h5>
-                                            <span class="last-txt">Ultimo messaggio inviato</span>
-                                        </div>
-                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="p-3 align-items-center d-flex position-relative">
-                                        <div class="img-container">
-                                            <img class="rounded-circle" src="./img/avatar_8.jpg" alt="avatar">
-                                        </div>
-                                        <div class="text-notification ms-3 position-relative">
-                                            <h5 class="m-0">Davide</h5>
-                                            <span class="last-txt">Ultimo messaggio inviato</span>
-                                        </div>
-                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
-                                    </div>
-                                </li>
-                            
+                                
                             </ul>
                         </div>
                     </div>
