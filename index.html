@@ -12,206 +12,208 @@
 <body>
 
     <main>
-        <div class="container min-width mt-5 p-0 max-h">
-            <div class="row">
-                <div class="col-5 bckg-white p-0">
-                    <!-- user profile -->
-                    <div class="user d-flex align-items-center justify-content-between m-3">
-                        <div class="user-profile d-flex align-items-center">
-                            <div class="img-container">
-                                <img class="rounded-circle" src="./img/avatar_io.jpg" alt="avatar">
+        <div id="app">
+            <div class="container min-width mt-5 p-0 max-h">
+                <div class="row">
+                    <div class="col-5 bckg-white p-0">
+                        <!-- user profile -->
+                        <div class="user d-flex align-items-center justify-content-between m-3">
+                            <div class="user-profile d-flex align-items-center">
+                                <div class="img-container">
+                                    <img class="rounded-circle" src="./img/avatar_io.jpg" alt="avatar">
+                                </div>
+                                <h5>Sofia</h5>
                             </div>
-                            <h5>Sofia</h5>
-                        </div>
-                        <div class="menu d-flex ">
-                            <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-circle-notch"></i> </div>
-                            <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-comment-alt"></i> </div>
-                            <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-ellipsis-v"></i> </div>
-                        </div>
-                    </div>
-                    <!-- notification panel -->
-                    <div class="notification ">
-                        <div class="p-3 align-items-center d-flex">
-                            <div class="bell-container rounded-circle d-flex align-items-center justify-content-center">
-                                <i class="fa-solid fa-bell-slash fa-xl trasparent"></i>
-                            </div>
-                            <div class="text-notification ms-3">
-                                <h5 class="m-0">Ricevi notifiche di nuovi messaggi</h5>
-                                <a href="#">Attiva notifiche desktop</a>
+                            <div class="menu d-flex ">
+                                <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-circle-notch"></i> </div>
+                                <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-comment-alt"></i> </div>
+                                <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-ellipsis-v"></i> </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- search bar  -->
-                    <div class="search-bar p-2">
-                        <i class="fa-solid fa-magnifying-glass icon-colr"></i> 
-                        <input class="form-control search" list="datalistOptions" id="exampleDataList" placeholder="Cerca o inizia una nuova chat">
-                        <datalist id="datalistOptions">
-                            <option value="San Francisco">
-                            <option value="New York">
-                            <option value="Seattle">
-                            <option value="Los Angeles">
-                            <option value="Chicago">
-                          </datalist>
-                    </div>
-                    <!-- contact list -->
-                    <div class="contacts overflow-auto">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-secondary">
-                                <div class="p-2 align-items-center d-flex position-relative">
-                                    <div class="img-container">
-                                        <img class="rounded-circle" src="./img/avatar_1.jpg" alt="avatar">
-                                    </div>
-                                    <div class="text-notification ms-3 position-relative">
-                                        <h5 class="m-0">Michele</h5>
-                                        <span class="last-txt">Ultimo messaggio inviato</span>
-                                    </div>
-                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                        <!-- notification panel -->
+                        <div class="notification ">
+                            <div class="p-3 align-items-center d-flex">
+                                <div class="bell-container rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-bell-slash fa-xl trasparent"></i>
                                 </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="p-3 align-items-center d-flex position-relative">
-                                    <div class="img-container">
-                                        <img class="rounded-circle" src="./img/avatar_2.jpg" alt="avatar">
-                                    </div>
-                                    <div class="text-notification ms-3 position-relative">
-                                        <h5 class="m-0">Fabio</h5>
-                                        <span class="last-txt">Ultimo messaggio inviato</span>
-                                    </div>
-                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="p-3 align-items-center d-flex position-relative">
-                                    <div class="img-container">
-                                        <img class="rounded-circle" src="./img/avatar_3.jpg" alt="avatar">
-                                    </div>
-                                    <div class="text-notification ms-3 position-relative">
-                                        <h5 class="m-0">Samuele</h5>
-                                        <span class="last-txt">Ultimo messaggio inviato</span>
-                                    </div>
-                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="p-3 align-items-center d-flex position-relative">
-                                    <div class="img-container">
-                                        <img class="rounded-circle" src="./img/avatar_4.jpg" alt="avatar">
-                                    </div>
-                                    <div class="text-notification ms-3 position-relative">
-                                        <h5 class="m-0">Alessandro B.</h5>
-                                        <span class="last-txt">Ultimo messaggio inviato</span>
-                                    </div>
-                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="p-3 align-items-center d-flex position-relative">
-                                    <div class="img-container">
-                                        <img class="rounded-circle" src="./img/avatar_5.jpg" alt="avatar">
-                                    </div>
-                                    <div class="text-notification ms-3 position-relative">
-                                        <h5 class="m-0">Alessandro L.</h5>
-                                        <span class="last-txt">Ultimo messaggio inviato</span>
-                                    </div>
-                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="p-3 align-items-center d-flex position-relative">
-                                    <div class="img-container">
-                                        <img class="rounded-circle" src="./img/avatar_6.jpg" alt="avatar">
-                                    </div>
-                                    <div class="text-notification ms-3 position-relative">
-                                        <h5 class="m-0">Claudia</h5>
-                                        <span class="last-txt">Ultimo messaggio inviato</span>
-                                    </div>
-                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="p-3 align-items-center d-flex position-relative">
-                                    <div class="img-container">
-                                        <img class="rounded-circle" src="./img/avatar_7.jpg" alt="avatar">
-                                    </div>
-                                    <div class="text-notification ms-3 position-relative">
-                                        <h5 class="m-0">Federico</h5>
-                                        <span class="last-txt">Ultimo messaggio inviato</span>
-                                    </div>
-                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="p-3 align-items-center d-flex position-relative">
-                                    <div class="img-container">
-                                        <img class="rounded-circle" src="./img/avatar_8.jpg" alt="avatar">
-                                    </div>
-                                    <div class="text-notification ms-3 position-relative">
-                                        <h5 class="m-0">Davide</h5>
-                                        <span class="last-txt">Ultimo messaggio inviato</span>
-                                    </div>
-                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
-                                </div>
-                            </li>
-                           
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-7 p-0 border-start">
-                    <!-- contact chat-->
-                    <div class="user d-flex align-items-center justify-content-between bckg-white p-3">
-                        <div class="user-profile d-flex align-items-center">
-                            <div class="img-container">
-                                <img class="rounded-circle" src="./img/avatar_1.jpg" alt="avatar">
-                            </div>
-                            <div class="text-notification ms-3 position-relative">
-                                <h5 class="m-0">Michele</h5>
-                                <span class="last-txt">Ultimo accesso alle 12.00</span>
-                            </div>
-                        </div>
-                        <div class="menu d-flex ">
-                            <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-search"></i> </div>
-                            <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-paperclip"></i> </div>
-                            <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-ellipsis-v"></i> </div>
-                        </div>
-                    </div>
-                    <!-- messages zone -->
-                    <div class="msg-zone overflow-auto">
-                        <div class="container">
-                            <div class="row m-4">
-                                <div class="col d-flex flex-column">
-                                    <div class="sent-msg p-2 m-4 align-self-end rounded position-relative">
-                                        <p class="me-4">Hai portatto a spasso il cane? </p>
-                                        <p class="last-txt font-size-span position-absolute bottom-0 end-0 m-1">12.00</p>
-                                    </div>
-                                    
-                                    <div class="recived-msg align-self-start bckg-white p-2 rounded position-relative">
-                                        <p class="me-4">Hai portatto a spasso il cane? </p>
-                                        <p class="last-txt font-size-span position-absolute bottom-0 end-0 m-1">12.00</p>
-                                    </div>
-                                    <div class="sent-msg p-2 m-4 align-self-end rounded position-relative">
-                                        <p class="me-4">Hai portatto a spasso il cane? </p>
-                                        <p class="last-txt font-size-span position-absolute bottom-0 end-0 m-1">12.00</p>
-                                    </div>
-                                    
-                                    <div class="recived-msg align-self-start bckg-white p-2 rounded position-relative">
-                                        <p class="me-4">Hai portatto a spasso il cane? </p>
-                                        <p class="last-txt font-size-span position-absolute bottom-0 end-0 m-1">12.00</p>
-                                    </div>
+                                <div class="text-notification ms-3">
+                                    <h5 class="m-0">Ricevi notifiche di nuovi messaggi</h5>
+                                    <a href="#">Attiva notifiche desktop</a>
                                 </div>
                             </div>
                         </div>
+                        <!-- search bar  -->
+                        <div class="search-bar p-2">
+                            <i class="fa-solid fa-magnifying-glass icon-colr"></i> 
+                            <input class="form-control search" list="datalistOptions" id="exampleDataList" placeholder="Cerca o inizia una nuova chat">
+                            <datalist id="datalistOptions">
+                                <option value="San Francisco">
+                                <option value="New York">
+                                <option value="Seattle">
+                                <option value="Los Angeles">
+                                <option value="Chicago">
+                            </datalist>
+                        </div>
+                        <!-- contact list -->
+                        <div class="contacts overflow-auto">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item list-group-item-secondary">
+                                    <div class="p-2 align-items-center d-flex position-relative">
+                                        <div class="img-container">
+                                            <img class="rounded-circle" src="./img/avatar_1.jpg" alt="avatar">
+                                        </div>
+                                        <div class="text-notification ms-3 position-relative">
+                                            <h5 class="m-0">Michele</h5>
+                                            <span class="last-txt">Ultimo messaggio inviato</span>
+                                        </div>
+                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="p-3 align-items-center d-flex position-relative">
+                                        <div class="img-container">
+                                            <img class="rounded-circle" src="./img/avatar_2.jpg" alt="avatar">
+                                        </div>
+                                        <div class="text-notification ms-3 position-relative">
+                                            <h5 class="m-0">Fabio</h5>
+                                            <span class="last-txt">Ultimo messaggio inviato</span>
+                                        </div>
+                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="p-3 align-items-center d-flex position-relative">
+                                        <div class="img-container">
+                                            <img class="rounded-circle" src="./img/avatar_3.jpg" alt="avatar">
+                                        </div>
+                                        <div class="text-notification ms-3 position-relative">
+                                            <h5 class="m-0">Samuele</h5>
+                                            <span class="last-txt">Ultimo messaggio inviato</span>
+                                        </div>
+                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="p-3 align-items-center d-flex position-relative">
+                                        <div class="img-container">
+                                            <img class="rounded-circle" src="./img/avatar_4.jpg" alt="avatar">
+                                        </div>
+                                        <div class="text-notification ms-3 position-relative">
+                                            <h5 class="m-0">Alessandro B.</h5>
+                                            <span class="last-txt">Ultimo messaggio inviato</span>
+                                        </div>
+                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="p-3 align-items-center d-flex position-relative">
+                                        <div class="img-container">
+                                            <img class="rounded-circle" src="./img/avatar_5.jpg" alt="avatar">
+                                        </div>
+                                        <div class="text-notification ms-3 position-relative">
+                                            <h5 class="m-0">Alessandro L.</h5>
+                                            <span class="last-txt">Ultimo messaggio inviato</span>
+                                        </div>
+                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="p-3 align-items-center d-flex position-relative">
+                                        <div class="img-container">
+                                            <img class="rounded-circle" src="./img/avatar_6.jpg" alt="avatar">
+                                        </div>
+                                        <div class="text-notification ms-3 position-relative">
+                                            <h5 class="m-0">Claudia</h5>
+                                            <span class="last-txt">Ultimo messaggio inviato</span>
+                                        </div>
+                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="p-3 align-items-center d-flex position-relative">
+                                        <div class="img-container">
+                                            <img class="rounded-circle" src="./img/avatar_7.jpg" alt="avatar">
+                                        </div>
+                                        <div class="text-notification ms-3 position-relative">
+                                            <h5 class="m-0">Federico</h5>
+                                            <span class="last-txt">Ultimo messaggio inviato</span>
+                                        </div>
+                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="p-3 align-items-center d-flex position-relative">
+                                        <div class="img-container">
+                                            <img class="rounded-circle" src="./img/avatar_8.jpg" alt="avatar">
+                                        </div>
+                                        <div class="text-notification ms-3 position-relative">
+                                            <h5 class="m-0">Davide</h5>
+                                            <span class="last-txt">Ultimo messaggio inviato</span>
+                                        </div>
+                                        <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                    </div>
+                                </li>
+                            
+                            </ul>
+                        </div>
                     </div>
-                    <!-- message area text inputs -->
-                    <div class="text-area d-flex py-3 align-items-center justify-content-evenly">
-                        <div class="mx-4 dark-icon-colr">
-                            <i class="far fa-xl fa-smile"></i>
+                    <div class="col-7 p-0 border-start">
+                        <!-- contact chat-->
+                        <div class="user d-flex align-items-center justify-content-between bckg-white p-3">
+                            <div class="user-profile d-flex align-items-center">
+                                <div class="img-container">
+                                    <img class="rounded-circle" src="./img/avatar_1.jpg" alt="avatar">
+                                </div>
+                                <div class="text-notification ms-3 position-relative">
+                                    <h5 class="m-0">Michele</h5>
+                                    <span class="last-txt">Ultimo accesso alle 12.00</span>
+                                </div>
+                            </div>
+                            <div class="menu d-flex ">
+                                <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-search"></i> </div>
+                                <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-paperclip"></i> </div>
+                                <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-ellipsis-v"></i> </div>
+                            </div>
                         </div>
-                        
-                        <div class="input-group">
-                            <input type="text" placeholder="Scrivi un messaggio" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <!-- messages zone -->
+                        <div class="msg-zone overflow-auto">
+                            <div class="container">
+                                <div class="row m-4">
+                                    <div class="col d-flex flex-column">
+                                        <div class="sent-msg p-2 m-4 align-self-end rounded position-relative">
+                                            <p class="me-4">Hai portatto a spasso il cane? </p>
+                                            <p class="last-txt font-size-span position-absolute bottom-0 end-0 m-1">12.00</p>
+                                        </div>
+                                        
+                                        <div class="recived-msg align-self-start bckg-white p-2 rounded position-relative">
+                                            <p class="me-4">Hai portatto a spasso il cane? </p>
+                                            <p class="last-txt font-size-span position-absolute bottom-0 end-0 m-1">12.00</p>
+                                        </div>
+                                        <div class="sent-msg p-2 m-4 align-self-end rounded position-relative">
+                                            <p class="me-4">Hai portatto a spasso il cane? </p>
+                                            <p class="last-txt font-size-span position-absolute bottom-0 end-0 m-1">12.00</p>
+                                        </div>
+                                        
+                                        <div class="recived-msg align-self-start bckg-white p-2 rounded position-relative">
+                                            <p class="me-4">Hai portatto a spasso il cane? </p>
+                                            <p class="last-txt font-size-span position-absolute bottom-0 end-0 m-1">12.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mx-4 dark-icon-colr">
-                            <i class="fas fa-xl fa-microphone"></i>
+                        <!-- message area text inputs -->
+                        <div class="text-area d-flex py-3 align-items-center justify-content-evenly">
+                            <div class="mx-4 dark-icon-colr">
+                                <i class="far fa-xl fa-smile"></i>
+                            </div>
+                            
+                            <div class="input-group">
+                                <input type="text" placeholder="Scrivi un messaggio" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            </div>
+                            <div class="mx-4 dark-icon-colr">
+                                <i class="fas fa-xl fa-microphone"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
