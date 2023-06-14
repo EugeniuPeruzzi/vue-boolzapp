@@ -5,11 +5,14 @@
 }
 
 body{
-    height: 100vh;
-    background: linear-gradient(180deg, #009688 15%, #D9DBD4 15%);
+    height: 96vh;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(180deg, rgba(0,150,136,1) 14%, rgba(220,219,209,1) 14%, rgba(220,219,209,1) 100%); 
 }
 
-
+.max-h{
+    max-height: 90vh;
+}
 
 img, .bell-container{
     height: 50px;
