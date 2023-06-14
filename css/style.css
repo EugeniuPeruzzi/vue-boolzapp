@@ -83,6 +83,16 @@ img, .bell-container{
     width: 100%;
 }
 
+.msg-zone{
+    height: 875px;
+    width: 100%;
+    background-image: url(../img/mine.jpg);
+}
+
+.text-area{
+    background-color: #F3EEEA;
+}
+
 @media screen and (max-width: 991px) {
 
     .min-width{
