@@ -69,3 +69,23 @@ img, .bell-container{
 .fa-magnifying-glass{
     position: absolute;
 }
+
+.icon-colr{
+    color: #B1B1B1;
+}
+
+.last-txt{
+    color: #B9BFC6;
+}
+
+.overflow {
+    height: 50%;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 991px) {
+
+    .min-width{
+        min-width: 991px;
+    }
+}

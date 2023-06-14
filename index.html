@@ -12,8 +12,8 @@
 <body>
 
     <main>
-        <div class="container">
-            <div class="row vh-80 mt-5">
+        <div class="container min-width">
+            <div class="row vh-80 mt-2">
                 <div class="col-5 bckg-white p-0">
                     <!-- user profile -->
                     <div class="user d-flex align-items-center justify-content-between m-3">
@@ -24,9 +24,9 @@
                             <h5>Sofia</h5>
                         </div>
                         <div class="menu d-flex ">
-                            <div class="mx-2" href="nav-user"> <i class="fas fa-circle-notch"></i> </div>
-                            <div class="mx-2" href="nav-user"> <i class="fas fa-comment-alt"></i> </div>
-                            <div class="mx-2" href="nav-user"> <i class="fas fa-ellipsis-v"></i> </div>
+                            <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-circle-notch"></i> </div>
+                            <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-comment-alt"></i> </div>
+                            <div class="mx-2 icon-colr"> <i class="fas fa-xl fa-ellipsis-v"></i> </div>
                         </div>
                     </div>
                     <!-- notification panel -->
@@ -53,9 +53,98 @@
                             <option value="Chicago">
                           </datalist>
                     </div>
+                    <!-- contact list -->
+                    <div class="contacts overflow">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-secondary">
+                                <div class="p-2 align-items-center d-flex position-relative">
+                                    <div class="img-container">
+                                        <img class="rounded-circle" src="./img/avatar_1.jpg" alt="avatar">
+                                    </div>
+                                    <div class="text-notification ms-3 position-relative">
+                                        <h5 class="m-0">Michele</h5>
+                                        <span class="last-txt">Ultimo messaggio inviato</span>
+                                    </div>
+                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="p-3 align-items-center d-flex position-relative">
+                                    <div class="img-container">
+                                        <img class="rounded-circle" src="./img/avatar_2.jpg" alt="avatar">
+                                    </div>
+                                    <div class="text-notification ms-3 position-relative">
+                                        <h5 class="m-0">Fabio</h5>
+                                        <span class="last-txt">Ultimo messaggio inviato</span>
+                                    </div>
+                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="p-3 align-items-center d-flex position-relative">
+                                    <div class="img-container">
+                                        <img class="rounded-circle" src="./img/avatar_3.jpg" alt="avatar">
+                                    </div>
+                                    <div class="text-notification ms-3 position-relative">
+                                        <h5 class="m-0">Samuele</h5>
+                                        <span class="last-txt">Ultimo messaggio inviato</span>
+                                    </div>
+                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="p-3 align-items-center d-flex position-relative">
+                                    <div class="img-container">
+                                        <img class="rounded-circle" src="./img/avatar_4.jpg" alt="avatar">
+                                    </div>
+                                    <div class="text-notification ms-3 position-relative">
+                                        <h5 class="m-0">Alessandro B.</h5>
+                                        <span class="last-txt">Ultimo messaggio inviato</span>
+                                    </div>
+                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="p-3 align-items-center d-flex position-relative">
+                                    <div class="img-container">
+                                        <img class="rounded-circle" src="./img/avatar_5.jpg" alt="avatar">
+                                    </div>
+                                    <div class="text-notification ms-3 position-relative">
+                                        <h5 class="m-0">Alessandro L.</h5>
+                                        <span class="last-txt">Ultimo messaggio inviato</span>
+                                    </div>
+                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="p-3 align-items-center d-flex position-relative">
+                                    <div class="img-container">
+                                        <img class="rounded-circle" src="./img/avatar_5.jpg" alt="avatar">
+                                    </div>
+                                    <div class="text-notification ms-3 position-relative">
+                                        <h5 class="m-0">Alessandro L.</h5>
+                                        <span class="last-txt">Ultimo messaggio inviato</span>
+                                    </div>
+                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="p-3 align-items-center d-flex position-relative">
+                                    <div class="img-container">
+                                        <img class="rounded-circle" src="./img/avatar_5.jpg" alt="avatar">
+                                    </div>
+                                    <div class="text-notification ms-3 position-relative">
+                                        <h5 class="m-0">Alessandro L.</h5>
+                                        <span class="last-txt">Ultimo messaggio inviato</span>
+                                    </div>
+                                    <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-7 blue">
-                    <div class="user d-flex justify-content-between">
+                <div class="col-7 p-0 border-start">
+                    <div class="user d-flex justify-content-between bckg-white">
                         <div class="img-container d-flex">
                             <img class="rounded-circle" src="./img/avatar_io.jpg" alt="avatar">
                         </div>
