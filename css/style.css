@@ -39,6 +39,14 @@ img, .bell-container{
     background-color: #fff;
 }
 
-.icon-size{
-    width: 35%;
+.notification{
+    background-color: #8EDAFC;
+}
+
+.bell-container{
+    background-color: #fff;
+}
+
+.trasparent{
+    color: #8EDAFC;
 }
