@@ -167,11 +167,17 @@ createApp({
                     ],
                 }
             ],
-
+            activeContact: 0
         }
     },
     methods: {
-        
+        lastMessage(contact){
+            let q = contact.messages
+        },
+
+        activeUser(index){
+            this.activeContact = index
+        }
     },
 }).mount('#app')
 
