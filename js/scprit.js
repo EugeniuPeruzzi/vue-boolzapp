@@ -167,17 +167,40 @@ createApp({
                     ],
                 }
             ],
-            activeContact: 0
+            activeContact: 0,
+            newMessage: '',
         }
     },
     methods: {
-        lastMessage(contact){
-            let q = contact.messages
-        },
-
+        
         activeUser(index){
             this.activeContact = index
-        }
+        },
+
+        sendMessage(){
+
+            let obj =
+            {
+                date: '',
+                message: this.newMessage,
+                status:'sent',
+            }
+            this.contacts[this.activeContact].messages.push(obj),
+            this.send_message='';
+            setTimeout(()=>
+            {
+                obj = 
+                {
+                    date: '',
+                    message: 'ok',
+                    status:'received'
+                }
+                    this.contacts[this.activeContact].messages.push(obj)
+            },1000)
+        },
+
+
+
     },
 }).mount('#app')
 

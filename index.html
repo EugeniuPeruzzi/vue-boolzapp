@@ -64,7 +64,7 @@
                                         </div>
                                         <div class="text-notification ms-3 position-relative">
                                             <h5 class="m-0">{{contacts[index].name}}</h5>
-                                            <span class="last-txt"></span>
+                                            <span class="last-txt">Ultimo messaggio</span>
                                         </div>
                                         <span class="last-txt position-absolute top-0 end-0 me-3 mt-2">12.00</span>
                                     </div>
@@ -97,7 +97,7 @@
                                     <div class="col d-flex flex-column">
                                         <div class="sen-msg p-2 m-4  rounded position-relative" v-for="(msg, index) in contacts[activeContact].messages" :class="contacts[activeContact].messages[index].status === 'received' ? 'bckg-white align-self-start' : ' sent-msg align-self-end'">
                                             <p class="me-4">{{msg.message}}</p>
-                                            <p class="last-txt font-size-span position-absolute bottom-0 end-0 m-1">12.00</p>
+                                            <p class="last-txt font-size-span position-absolute bottom-0 end-0 m-1">{{msg.date}}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@
                             </div>
                             
                             <div class="input-group">
-                                <input type="text" placeholder="Scrivi un messaggio" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                <input v-model="newMessage" @keyup.enter="sendMessage()" type="text" placeholder="Scrivi un messaggio" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                             </div>
                             <div class="mx-4 dark-icon-colr">
                                 <i class="fas fa-xl fa-microphone"></i>
