@@ -16,6 +16,11 @@ Milestone 2
 ●	Click sul contatto mostra la conversazione del contatto cliccato
 
 
+Milestone 3
+●	Aggiunta di un messaggio: l’utente scrive un testo nella parte bassa e digitando “enter” il testo viene aggiunto al thread sopra, come messaggio verde
+●	Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta, che apparirà dopo 1 secondo
+
+
 ```
 
 SOLUZIONE: 
@@ -28,7 +33,6 @@ Milestone 1
     3.1 Ciclo l'array per poter visualizzare gli utenti a schermo.
 
 Milestone 2
-
 1. Visualizzazione dinamica dei messaggi:
     1.2 Utilizzare la direttiva v-for per iterare sulla lista dei messaggi del contatto attivo.
     1.3 Mostra ogni messaggio all'interno del pannello della conversazione.
@@ -37,4 +41,10 @@ Milestone 2
     2.1 Aggiungi un gestore di eventi al contatto.
     2.2 Quando viene cliccato un contatto, impostare il contatto attivo.
     2.3 La conversazione del contatto attivo verrà visualizzata nel pannello della conversazione.
+
+Milestone 3
+1. Genere un array vuouto che al inserimento del testo scritto va a pushare dentro l'array
+2. Creo una funzione con il timer 
+    2.1 Dopo un tot ti tempo auto pusho la risposta ok dentro l'array creato
+
 ```
