@@ -186,7 +186,7 @@ createApp({
                 status:'sent',
             }
             this.contacts[this.activeContact].messages.push(obj),
-            this.send_message='';
+            this.newMessage='';
             setTimeout(()=>
             {
                 obj = 
@@ -195,7 +195,7 @@ createApp({
                     message: 'ok',
                     status:'received'
                 }
-                    this.contacts[this.activeContact].messages.push(obj)
+                this.contacts[this.activeContact].messages.push(obj)
             },1000)
         },
 
